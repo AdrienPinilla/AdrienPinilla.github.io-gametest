@@ -1,0 +1,161 @@
+body
+
+#game{
+    background-image: url("../sprites/TileSet/png/BG/BG.png");
+    width: 1000px;
+    height: 750px;
+    margin: 2rem auto;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Conception of ground */
+
+#ground{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+}
+
+.left-ground, .midle-ground, .right-ground{
+    width: 128px;
+    height: 128px;
+}
+
+.left-ground{
+    background-image: url("../sprites/TileSet/png/Tiles/1.png");
+    
+}
+
+.midle-ground{
+    background-image: url("../sprites/TileSet/png/Tiles/2.png");
+}
+
+.right-ground{
+    background-image: url("../sprites/TileSet/png/Tiles/3.png");
+}
+
+/* conception of Player  */
+
+#player{
+    background-size: 162px;
+    width: 100px;
+    height: 152px;
+    position: absolute;
+    bottom: 108px;
+    left: 0;
+}
+
+.player-idle{
+    
+    animation: 1.5s infinite linear idle;
+    transition: 0.5s;
+}
+
+
+
+
+@keyframes idle{
+    0% {
+        background-image: url("../sprites/FlatBoy/png/Idle\(1\).png");
+    }
+    7% {
+        background-image: url("../sprites/FlatBoy/png/Idle\(2\).png");
+    }
+    14% {
+        background-image: url("../sprites/FlatBoy/png/Idle\(3\).png");
+    }
+    21% {
+        background-image: url("../sprites/FlatBoy/png/Idle\(4\).png");
+    }
+    28%{
+        background-image: url("../sprites/FlatBoy/png/Idle\(5\).png");
+    }
+    35%{
+        background-image: url("../sprites/FlatBoy/png/Idle\(6\).png");
+    }
+    42%{
+        background-image: url("../sprites/FlatBoy/png/Idle\(7\).png");
+    }
+    49%{
+        background-image: url("../sprites/FlatBoy/png/Idle\(8\).png");
+    }
+    56%{
+        background-image: url("../sprites/FlatBoy/png/Idle\(9\).png");
+    }
+    63%{
+        background-image: url("../sprites/FlatBoy/png/Idle\(10\).png");
+    }
+    70%{
+        background-image: url("../sprites/FlatBoy/png/Idle\(11\).png");
+    }
+    77%{
+        background-image: url("../sprites/FlatBoy/png/Idle\(12\).png");
+    }
+    84%{
+        background-image: url("../sprites/FlatBoy/png/Idle\(13\).png");
+    }
+    91%{
+        background-image: url("../sprites/FlatBoy/png/Idle\(14\).png");
+    }
+    100% {
+        background-image: url("../sprites/FlatBoy/png/Idle\(15\).png");
+    }
+}
+
+
+
+.player-run{
+    animation: 0.8s infinite linear run;
+}
+
+
+@keyframes run{
+    0% {
+        background-image: url("../sprites/FlatBoy/png/Run\(1\).png");
+    }
+    7% {
+        background-image: url("../sprites/FlatBoy/png/Run\(2\).png");
+    }
+    14% {
+        background-image: url("../sprites/FlatBoy/png/Run\(3\).png");
+    }
+    21% {
+        background-image: url("../sprites/FlatBoy/png/Run\(4\).png");
+    }
+    28%{
+        background-image: url("../sprites/FlatBoy/png/Run\(5\).png");
+    }
+    35%{
+        background-image: url("../sprites/FlatBoy/png/Run\(6\).png");
+    }
+    42%{
+        background-image: url("../sprites/FlatBoy/png/Run\(7\).png");
+    }
+    49%{
+        background-image: url("../sprites/FlatBoy/png/Run\(8\).png");
+    }
+    56%{
+        background-image: url("../sprites/FlatBoy/png/Run\(9\).png");
+    }
+    63%{
+        background-image: url("../sprites/FlatBoy/png/Run\(10\).png");
+    }
+    70%{
+        background-image: url("../sprites/FlatBoy/png/Run\(11\).png");
+    }
+    77%{
+        background-image: url("../sprites/FlatBoy/png/Run\(12\).png");
+    }
+    84%{
+        background-image: url("../sprites/FlatBoy/png/Run\(13\).png");
+    }
+    91%{
+        background-image: url("../sprites/FlatBoy/png/Run\(14\).png");
+    }
+    100% {
+        background-image: url("../sprites/FlatBoy/png/Run\(15\).png");
+    }
+}
